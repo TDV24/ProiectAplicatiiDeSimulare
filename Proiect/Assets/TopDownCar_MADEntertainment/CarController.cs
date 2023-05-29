@@ -11,10 +11,9 @@ public class CarController : MonoBehaviour
 
 	public controlMode CarControlMode;
 
-	public float MaxSpeed = 7.0f;
+	public float MaxSpeed = 10.0f;
 	public float MaxSteer = 2.0f;
-	public float Breaks = 0.2f;
-
+	public float Breaks = 0.5f;
 	[SerializeField]
 	float Acceleration = 0.0f;
 	float Steer = 0.0f;
@@ -215,4 +214,24 @@ public class CarController : MonoBehaviour
 
 		transform.Translate (Vector2.up * Acceleration * Time.deltaTime);
 	}
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+		Debug.Log("Teren " + collision.ToString());
+		if(collision.tag == "Road")
+		{
+			MaxSpeed = 10.0f;
+			MaxSteer = 2.0f;
+		}
+		else if(collision.tag == "Gravel")
+		{
+			MaxSpeed = 4.0f;
+			MaxSteer = 1.0f;
+		}
+		else if(collision.tag == "Sand")
+		{
+			MaxSpeed = 2.0f;
+			MaxSteer = 0.5f;
+		}
+    }
 }
