@@ -11,7 +11,7 @@ Jucătorul va fi însoțit de-a lungul cursei de alți „jucători”, mașini 
 Din meniu jucătorul poate alege:
 - să învețe cum își poate conduce mașina (apăsând pe butonul INSTRUCTIONS)
 - să înceapă o nouă cursă (apăsând pe butonul PLAY)
-- să ajunteze volumul muzicii de funndal (apăsând pe butonul OPTIONS)
+- să ajusteze volumul muzicii de funndal (apăsând pe butonul OPTIONS)
 
 ![image](https://github.com/TDV24/ProiectAplicatiiDeSimulare/assets/80088976/76965e86-7e3f-4d76-aefb-a4480b225cdd)
 
