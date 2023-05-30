@@ -20,6 +20,6 @@ public class CameraFollowScript : MonoBehaviour
 	void FixedUpdate () 
 	{
 		if(Follow)
-		transform.position = new Vector3 (PlayerCar.transform.position.x + OffSetX, PlayerCar.transform.position.y + OffSetY, -100.0f);	
+		transform.position = new Vector3 (PlayerCar.transform.position.x + OffSetX, PlayerCar.transform.position.y + OffSetY, -50.0f);	
 	}
 }

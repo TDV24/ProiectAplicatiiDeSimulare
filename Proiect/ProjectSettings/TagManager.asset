@@ -7,6 +7,7 @@ TagManager:
   - Sand
   - Road
   - Gravel
+  - AI
   layers:
   - Default
   - TransparentFX

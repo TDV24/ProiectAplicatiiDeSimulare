@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4773766300411769708}
   - component: {fileID: 1706182188754668107}
   - component: {fileID: -7839610140197428928}
+  - component: {fileID: 3962877531994612634}
   m_Layer: 0
   m_Name: F1_Car1Prefab
   m_TagString: Untagged
@@ -211,3 +212,15 @@ PolygonCollider2D:
       - {x: -0.19, y: -0.55}
       - {x: -0.19, y: -0.61}
   m_UseDelaunayMesh: 0
+--- !u!114 &3962877531994612634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3713672786538303514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d21eeb9a898343c4b814376720c0d01a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
