@@ -20,6 +20,10 @@ public class TopDownCarController : MonoBehaviour
 
     //Components
     Rigidbody2D carRigidbody2D;
+    void Start()
+    {
+        rotationAngle = transform.rotation.eulerAngles.z;
+    }
 
     //Awake is called when the script instance is being loaded.
     void Awake()
@@ -130,7 +134,7 @@ public class TopDownCarController : MonoBehaviour
         
         if (collision.tag == "Road")
         {
-            maxSpeed = 10.0f;
+            maxSpeed = 20.0f;
             turnFactor = 2.0f;
         }
         else if (collision.tag == "Gravel")
