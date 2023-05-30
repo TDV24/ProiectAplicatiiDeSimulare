@@ -8,7 +8,7 @@ public class TopDownCarController : MonoBehaviour
     public float driftFactor = 0.95f;
     public float accelerationFactor = 30.0f;
     public float turnFactor = 3.5f;
-    public float maxSpeed = 20;
+    public float maxSpeed = 20.0f;
 
     //Local variables
     float accelerationInput = 0;
@@ -127,7 +127,7 @@ public class TopDownCarController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Teren " + collision.ToString());
+        
         if (collision.tag == "Road")
         {
             maxSpeed = 10.0f;
