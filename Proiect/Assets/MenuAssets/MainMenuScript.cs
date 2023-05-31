@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenuScript : MonoBehaviour
 {
@@ -20,5 +21,13 @@ public class MainMenuScript : MonoBehaviour
     {
         Debug.Log("quit");
         Application.Quit();
+    }
+    public void playGame()
+    {
+        SceneManager.LoadScene("DemoScene");
+    }
+    public void mainMenuLoad()
+    {
+        SceneManager.LoadScene("Menu Scene");
     }
 }

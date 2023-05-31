@@ -134,7 +134,7 @@ public class TopDownCarController : MonoBehaviour
         
         if (collision.tag == "Road")
         {
-            maxSpeed = 20.0f;
+            maxSpeed = 10.0f;
             turnFactor = 2.0f;
         }
         else if (collision.tag == "Gravel")
